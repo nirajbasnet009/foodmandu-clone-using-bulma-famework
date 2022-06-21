@@ -1,0 +1,72 @@
+*{margin: 0;
+padding: 0;}
+.image img{
+    height: 700px;
+}
+.images{
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    scale: (0.9);
+}
+.images1{
+    position: absolute;
+    right: 5%;
+    top: 0%;
+    scale: (0.9);
+}
+.images2{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    transform: scale(0.7);
+}
+.images3{
+    position: absolute;
+    left: 20%;
+    bottom: 5%;
+    transform: scale(0.9);
+}
+.middle{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    left: 5%;
+}
+.background{
+    background: url("images/background5.png") no-repeat;
+    background-size: cover;
+}
+.over{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.column img:hover{
+transform:scale(1.1);
+transition: 1s;
+cursor: pointer;
+}
+@media(max-width:768px){
+    #responsive{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .input.is-primary.is-radiusless{
+        margin: 5px;     
+    }
+}
+@media(min-width:768px){
+    .middle{
+        position: absolute;
+        top: 25%;
+        left: 15%;
+        right: 15%;
+    }
+}
